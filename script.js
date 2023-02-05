@@ -1,8 +1,12 @@
-const array = [1, 2, 3, 4, 5, 6, 7, 8];
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
-function newArray() {
-    let arr = array.filter((value, index) => index !== 5);
-    return arr;
+function removeElement(array,item) {
+    let index = array.indexOf(item); {
+        if (array !== -1) {
+            array.splice(index, 1);
+        }
+        return array;
+    }
 }
 
-console.log(newArray());
+console.log(removeElement(arr,5));
